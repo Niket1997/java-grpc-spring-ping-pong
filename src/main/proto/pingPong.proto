@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.niket.javaspringgrpc.proto_gen.ping_pong";
+option java_package = "ping_pong";
 option java_multiple_files = true;
 
 import "google/api/annotations.proto";

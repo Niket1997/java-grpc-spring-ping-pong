@@ -1,7 +1,7 @@
 package com.niket.javaspringgrpc.servers;
 
-import com.niket.javaspringgrpc.proto_gen.ping_pong.Request;
-import com.niket.javaspringgrpc.proto_gen.ping_pong.Response;
+import ping_pong.Request;
+import ping_pong.Response;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
