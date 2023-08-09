@@ -33,15 +33,17 @@ public final class PingPong {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016pingPong.proto\"\032\n\007Request\022\017\n\007payload\030\001" +
-      " \001(\t\"\034\n\010Response\022\020\n\010response\030\002 \001(\t20\n\017Pi" +
-      "ngPongService\022\035\n\004ping\022\010.Request\032\t.Respon" +
-      "se\"\000B0\n,com.niket.javaspringgrpc.proto_g" +
-      "en.ping_pongP\001b\006proto3"
+      "\n\016pingPong.proto\032\034google/api/annotations" +
+      ".proto\"\032\n\007Request\022\017\n\007payload\030\001 \001(\t\"\034\n\010Re" +
+      "sponse\022\020\n\010response\030\002 \001(\t2C\n\017PingPongServ" +
+      "ice\0220\n\004ping\022\010.Request\032\t.Response\"\023\202\323\344\223\002\r" +
+      "\"\010/v1/ping:\001*B0\n,com.niket.javaspringgrp" +
+      "c.proto_gen.ping_pongP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.api.AnnotationsProto.getDescriptor(),
         });
     internal_static_Request_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -55,6 +57,12 @@ public final class PingPong {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Response_descriptor,
         new java.lang.String[] { "Response", });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.api.AnnotationsProto.http);
+    com.google.protobuf.Descriptors.FileDescriptor
+        .internalUpdateFileDescriptor(descriptor, registry);
+    com.google.api.AnnotationsProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
